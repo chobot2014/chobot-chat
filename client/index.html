@@ -50,9 +50,7 @@
       }
       
       function scrollBottom() {
-        if($('#chat').scrollTop != 0){
-          alert(('#chat').scrollTop);
-        }
+          $('chatWindow').scrollTop(0);
       }
     </script>
   </head>
@@ -71,7 +69,7 @@
           </ul>
         </div>
         <div class="span9">
-          <div id="chat" class="chatWindow">
+          <div class="chatWindow">
             <table class="table table-striped table-bordered">
               <thead>
                 <tr>
