@@ -59,6 +59,7 @@
   <body>
     <div class="chat-container container-fluid" ng-controller="ChatController">
       <div class="row">
+        
         <div class="col-md-4">
           <ul class="nav nav-list well">
             <li class="nav-header">Online:</li>
@@ -67,10 +68,9 @@
           <input type="text" class="input-block-level" ng-model="name" ng-change="setName()" placeholder="userName">
         </div>
         
-        
         <div class="col-md-6">
           <div class="chatWindow">
-            <table id="chat-table" style="width: 100%;" class="table table-striped table-bordered">
+            <table id="chat-table" style="width: 100%;" class="table">
               <thead>
                 <tr>
                   <th class="span2">Name</th>
@@ -84,10 +84,10 @@
                 </tr>
               </tbody>
             </table>
-            <form ng-submit="send()"><input type="text" style="width: 100%" ng-model="text" placeholder="New Message"></form>
+            <form ng-submit="send()"><input type="text" ng-model="text" placeholder="New Message"></form>
            </div>
-           
         </div>
+        
       </div>
     </div>
     <script src="/socket.io/socket.io.js"></script>
