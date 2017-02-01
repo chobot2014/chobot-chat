@@ -50,8 +50,9 @@
       }
       
       function scrollBottom() {
-        //get the 
-        alert("hello world faggots");
+        if($('#chat').scrollTop == 0){
+          alert("something");
+        }
       }
     </script>
   </head>
@@ -70,7 +71,7 @@
           </ul>
         </div>
         <div class="span9">
-          <div class="chatWindow">
+          <div id="chat" class="chatWindow">
             <table class="table table-striped table-bordered">
               <thead>
                 <tr>
