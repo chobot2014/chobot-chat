@@ -66,10 +66,11 @@
           </ul>
           <input type="text" class="input-block-level" ng-model="name" ng-change="setName()" placeholder="userName">
         </div>
+        
+        
         <div class="col-md-6">
-          
           <div class="chatWindow">
-            <table id="chat-table" class="table table-striped table-bordered">
+            <table id="chat-table" style="width: 100%;" class="table table-striped table-bordered">
               <thead>
                 <tr>
                   <th class="span2">Name</th>
@@ -85,7 +86,6 @@
             </table>
             <form ng-submit="send()"><input type="text" style="width: 100%" ng-model="text" placeholder="New Message"></form>
            </div>
-           
            
         </div>
       </div>
