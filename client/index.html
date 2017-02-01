@@ -6,12 +6,9 @@
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/bootstrap-responsive.min.css">
     <style>
-      body {
-        padding-top: 60px;
-      }
       .chatWindow{
         width: 100%;
-        height: 500px;
+        height: 50%;
         overflow-y: auto;
       }
     </style>
@@ -56,7 +53,7 @@
     </script>
   </head>
   <body>
-    <div class="container" ng-controller="ChatController">
+    <div class="container-fluid" ng-controller="ChatController">
       <div class="row">
         <div class="span3">
           <ul class="nav nav-list well">
@@ -84,7 +81,7 @@
           </div>
           <div class="row controls">
             <form ng-submit="send()">
-              <div class="span2"><input type="text" class="input-block-level" ng-model="name" ng-change="setName()" placeholder="Your Name"></div>
+              <div class="span2"><input type="text" class="input-block-level" ng-model="name" ng-change="setName()" placeholder="userName"></div>
               <div class="input-append span7">
                 <input type="text" class="span6" ng-model="text" placeholder="Message">
                 <input type="submit" class="span1 btn btn-primary" value="Send" ng-disabled="!text">
