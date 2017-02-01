@@ -73,18 +73,18 @@
             <table id="chat-table" style="width: 100%;" class="table">
               <thead>
                 <tr>
-                  <th class="span2">Name</th>
-                  <th class="span7">Text</th>
+                  <th style="width: 25%">Name</th>
+                  <th style="width: 75%">Text</th>
                 </tr>
               </thead>
               <tbody>
                 <tr ng-repeat="msg in messages">
-                  <td class="span2" ng-bind="msg.name"></td>
-                  <td class="span7" ng-bind="msg.text"></td>
+                  <td style="width: 25%" ng-bind="msg.name"></td>
+                  <td style="width: 25%" ng-bind="msg.text"></td>
                 </tr>
               </tbody>
             </table>
-            <form ng-submit="send()"><input type="text" ng-model="text" placeholder="New Message"></form>
+            <form ng-submit="send()" style="width: 100%;"><input style="width: 100%;" type="text" ng-model="text" placeholder="New Message"></form>
            </div>
         </div>
         
