@@ -50,6 +50,7 @@
       }
       
       function scrollBottom() {
+          var scrollAmount = $('#chat-table').height();
           $('.chatWindow').scrollTop(0);
       }
     </script>
@@ -70,7 +71,7 @@
         </div>
         <div class="span9">
           <div class="chatWindow">
-            <table class="table table-striped table-bordered">
+            <table id="chat-table" class="table table-striped table-bordered">
               <thead>
                 <tr>
                   <th class="span2">Name</th>
