@@ -30,6 +30,7 @@
         socket.on('message', function (msg) {
           $scope.messages.push(msg);
           $scope.$apply();
+          scrollBottom();
         });
 
         socket.on('roster', function (names) {
@@ -46,6 +47,11 @@
         $scope.setName = function setName() {
           socket.emit('identify', $scope.name);
         };
+      }
+      
+      function scrollBottom() {
+        //get the 
+        alert("hello world faggots");
       }
     </script>
   </head>
