@@ -3,11 +3,23 @@
   "version": "0.0.0",
   "description": "chobot chat",
   "main": "server.js",
-  "repository": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chobot2014/chobot-chat.git"
+  },
   "author": "John Chohon",
   "dependencies": {
     "async": "~0.2.8",
     "express": "~3.2.4",
     "socket.io": "~0.9.14"
-  }
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "devDependencies": {},
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chobot2014/chobot-chat/issues"
+  },
+  "homepage": "https://github.com/chobot2014/chobot-chat#readme"
 }
