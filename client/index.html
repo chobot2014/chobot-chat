@@ -81,10 +81,13 @@
                 <tr ng-repeat="msg in messages">
                   <td style="width: 25%" ng-bind="msg.name"></td>
                   <td style="width: 25%" ng-bind="msg.text"></td>
-                </tr>
+                </tr>                
               </tbody>
+              <tfoot>
+                <tr><form ng-submit="send()" style="width: 100%;"><input style="width: 100%;" type="text" ng-model="text" placeholder="New Message"></form></tr>
+              </tfoot>
             </table>
-            <form ng-submit="send()" style="width: 100%;"><input style="width: 100%;" type="text" ng-model="text" placeholder="New Message"></form>
+            
            </div>
         </div>
       </div>
